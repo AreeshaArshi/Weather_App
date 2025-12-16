@@ -1,29 +1,51 @@
-# 🌤️ Weather App
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+                 
+            <button><i class="fa-solid fa-magnifying-glass" id="searchBtn"></i></button>
+                </div>  
+                </div>
+                <div class="location-not-found">
+               <h1>Sorry, Location not found</h1>
+               <img src="img/error.png" alt="404 Error">
 
-A simple weather web application built using **HTML, CSS, and JavaScript**.  
-It allows users to check the current weather of any city in real-time.
-
----
-
-## 🚀 Features
-
-- Search weather by city name
-- Displays temperature, humidity, and weather conditions
-- Responsive design for desktop and mobile
-- User-friendly interface
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML5** – Structure of the app  
-- **CSS3** – Styling and layout  
-- **JavaScript** – Fetching weather data from API  
-
----
-
-## 💻 How to Run Locally
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
+                </div>
+                <div class="weather-body">
+            <img src="img/cloud.png" alt="Weather Image" class="weather-img">
+            <div class="weather-box">
+                <p class="temperature">0<sup>℃</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                 <div class="wind">
+                   <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+                    </div>  
+                    <script src="script.js"></script>
+                            <script src="https://kit.fontawesome.com/71e0cb5c71.js" crossorigin="anonymous"></script>
+</body>
+</html>
